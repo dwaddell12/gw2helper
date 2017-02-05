@@ -12,6 +12,6 @@ public class TestApiGetsResponse {
     @Test
     public void TestApiGetDailies() {
         Gw2Api api = new Gw2Api();
-        assertNotNull(api.GetApiCallJson(Gw2Api.GW2_ACHIEVEMENTS_URI));
+        assertNotNull(api.GetApiCallJson(Gw2Api.GW2_ACHIEVEMENTS_DAILY_URI));
     }
 }

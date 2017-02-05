@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * Created by david on 1/30/2017.
  */
-public class Achievement {
+public class DailyAchievement {
 
     /**
      *
@@ -21,29 +21,6 @@ public class Achievement {
      "required_access": [
      "GuildWars2",
      "HeartOfThorns"
-     ]
-     }
-
-     {
-     "id": 1969,
-     "name": "Daily Maguuma Jungle Miner",
-     "description": "Fueling the engines of the economy.",
-     "requirement": "Gather raw materials by mining ore in the following Maguuma Jungle maps: Caledon Forest, Metrica Province, Brisban Wildlands, Sparkfly Fen, and Mount Maelstrom.",
-     "locked_text": "",
-     "type": "Default",
-     "flags": [],
-     "tiers": [
-     {
-     "count": 10,
-     "points": 0
-     }
-     ],
-     "rewards": [
-     {
-     "type": "Item",
-     "id": 68137,
-     "count": 1
-     }
      ]
      }
      */
