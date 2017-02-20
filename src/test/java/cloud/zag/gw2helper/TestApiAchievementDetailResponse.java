@@ -21,6 +21,7 @@ public class TestApiAchievementDetailResponse {
 
         try {
             Map<String, List<DailyAchievement>> dailyAchievementGroupResponse = om.readValue(json, new TypeReference<Map<String, List<DailyAchievement>>>() { } );
+
             for (String key : dailyAchievementGroupResponse.keySet())
             {
                 /*
@@ -31,7 +32,7 @@ public class TestApiAchievementDetailResponse {
                 for (DailyAchievement value : dailyAchievementGroupResponse.get(key))
                 {
                     String apiResponse = api.GetApiCallJson(Gw2Api.GW2_ACHIEVEMENTS_BASE + value.get_id());
-                    AchievementDetail testResponse = om.readValue(apiResponse, AchievementDetail.class);
+                    //AchievementDetail testResponse = om.readValue(apiResponse, AchievementDetail.class);
                     /*
                     System.out.print("ID: " + testResponse.get_id());
                     System.out.print(", Name: " + testResponse.get_name());
@@ -43,10 +44,6 @@ public class TestApiAchievementDetailResponse {
                     */
                 }
             }
-            /*
-            System.out.println(testResponse.get_id());
-            System.out.println(testResponse.get_name());
-            */
         } catch (IOException e){
             e.printStackTrace();
         }
